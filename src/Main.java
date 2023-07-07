@@ -3,13 +3,13 @@ import java.io.File;
 
 public class Main {
     public static void main(String[] args) {
-        PrintSpooler printSpooler = new PrintSpooler("spool.txt");
+        PrintSpooler printSpooler = new PrintSpooler("C:\\Users\\10716845\\Documents\\PrintSpooler\\src\\spool.txt");
 
         // Abre o arquivo de spool
         printSpooler.openPrintSpooler();
 
         // Caminho para a pasta que contém os arquivos de job
-        String jobFolderPath = "C:/path/to/jobs";
+        String jobFolderPath = "C:\\Users\\10716845\\Documents\\PrintSpooler\\src\\files";
 
         // Localiza todos os arquivos de job na pasta
         File jobFolder = new File(jobFolderPath);

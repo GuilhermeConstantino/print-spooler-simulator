@@ -33,18 +33,17 @@ public class PrintSpooler {
         try {
             // Simula a impressão, copiando o conteúdo do arquivo de job para o arquivo de
             // spool
-            FileWriter jobFileWriter = new FileWriter(jobName);
             BufferedReader jobReader = new BufferedReader(new FileReader(jobName));
 
             String line;
+            fileWriter.write("Novo job: "+jobName + "\n"); // Adiciona o nome do job ao arquivo de spool
             while ((line = jobReader.readLine()) != null) {
                 // Copia a linha para o arquivo de spool
                 fileWriter.write(line + "\n");
             }
 
             jobReader.close();
-            jobFileWriter.close();
-            fileWriter.write(jobName + "\n"); // Adiciona o nome do job ao arquivo de spool
+            
             fileWriter.flush();
         } catch (IOException e) {
             e.printStackTrace();

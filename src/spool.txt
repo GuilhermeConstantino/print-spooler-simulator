@@ -1,0 +1,6 @@
+Novo job: C:\Users\10716845\Documents\PrintSpooler\src\files\input1.txt
+a
+a
+Novo job: C:\Users\10716845\Documents\PrintSpooler\src\files\input2.txt
+b
+b
